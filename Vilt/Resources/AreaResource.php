@@ -10,7 +10,7 @@ use Modules\Locations\Entities\City;
 class AreaResource extends Resource
 {
     public ?string $model = Area::class;
-    public string $icon = "bx bxs-circle";
+    public string $icon = "bx bxs-map-pin";
     public string $group = "Locations";
     public ?bool $api = true;
 

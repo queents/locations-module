@@ -9,7 +9,7 @@ use Modules\Locations\Entities\Country;
 class CountryResource extends Resource
 {
     public ?string $model = Country::class;
-    public string $icon = "bx bxs-circle";
+    public string $icon = "bx bxs-flag";
     public string $group = "Locations";
     public ?bool $api = true;
 

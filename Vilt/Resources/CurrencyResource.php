@@ -9,7 +9,7 @@ use Modules\Locations\Entities\Currency;
 class CurrencyResource extends Resource
 {
     public ?string $model = Currency::class;
-    public string $icon = "bx bxs-circle";
+    public string $icon = "bx bx-money";
     public string $group = "Locations";
     public ?bool $api = false;
 

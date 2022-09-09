@@ -1,8 +1,16 @@
 {
     "name": "Locations",
     "alias": "locations",
-    "description": "",
-    "keywords": [],
+    "description": "Database seeds for Locations Module for VILT stack",
+    "keywords": [
+        "laravel",
+        "location",
+        "location GUI",
+        "location sets",
+        "ui",
+        "vilt-admin",
+        "Vilt stack"
+    ],
     "priority": 1,
     "providers": [
         "Modules\\Locations\\Providers\\LocationsServiceProvider"

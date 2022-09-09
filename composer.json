@@ -1,12 +1,28 @@
 {
-    "name": "nwidart/locations",
-    "description": "",
+    "name": "queents/locations-module",
+    "description": "Database seeds for Locations Module for VILT stack",
+    "keywords": [
+        "laravel",
+        "location",
+        "location GUI",
+        "location sets",
+        "ui",
+        "vilt-admin",
+        "Vilt stack"
+    ],
+    "type": "laravel-module",
+    "homepage": "https://www.queentechsolutions.net",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Nicolas Widart",
-            "email": "n.widart@gmail.com"
+            "name": "Fady Mondy",
+            "email": "info@3x1.io",
+            "role": "Senior Fullstack developer"
         }
     ],
+    "require": {
+        "queents/vilt": "^1.0"
+    },
     "extra": {
         "laravel": {
             "providers": [],

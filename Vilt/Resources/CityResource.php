@@ -12,7 +12,7 @@ use Modules\Locations\Entities\Country;
 class CityResource extends Resource
 {
     public ?string $model = City::class;
-    public string $icon = "bx bxs-circle";
+    public string $icon = "bx bxs-map";
     public string $group = "Locations";
     public ?bool $api = true;
 
