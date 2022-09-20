@@ -8,7 +8,7 @@ use Modules\Locations\Entities\Language;
 class LanguageResource extends Resource
 {
     public ?string $model = Language::class;
-    public string $icon = "bx bxs-blanket";
+    public string $icon = "bx bx-blanket";
     public string $group = "Locations";
     public ?bool $api = false;
 

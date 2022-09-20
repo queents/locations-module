@@ -17,7 +17,7 @@ class LocationsSettingsPage extends Setting {
     public ?bool $api = true;
     public ?string $path = "locations_settings";
     public ?string $group = "Locations";
-    public ?string $icon = "bx bxs-cog";
+    public ?string $icon = "bx bx-cog";
 
     public  function rows(): array
     {
