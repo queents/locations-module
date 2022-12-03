@@ -3,6 +3,8 @@
 namespace Modules\Locations\Entities;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * @property integer $id
@@ -31,14 +33,26 @@ class City extends Model
     protected $fillable = ['name', 'price', 'shipping', 'country_id', 'lat', 'lang', 'created_at', 'updated_at'];
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return HasMany
      */
-    public function projects()
+    public function projects(): HasMany
     {
         return $this->hasMany('Modules\Locations\Entities\Project');
     }
 
-    public  function  country(){
+    /**
+     * @return BelongsTo
+     */
+    public  function  country(): BelongsTo
+    {
         return $this->belongsTo(Country::class, 'country_id', 'id');
+    }
+
+    /**
+     * @return HasMany
+     */
+    public function areas(): HasMany
+    {
+        return $this->hasMany(Area::class, 'city_id');
     }
 }
